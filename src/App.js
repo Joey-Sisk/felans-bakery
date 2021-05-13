@@ -1,16 +1,14 @@
 import React from "react";
-import Button from "@material-ui/core/Button";
+import { Typography } from "@material-ui/core";
 // import { StylesProvider } from '@material-ui/core/styles';
 import "./App.css";
 
 function App() {
   return (
     <div>
-      <h1>Felans Bakery</h1>
-      <Button variant="contained" color="primary">
-        Hello World
-      </Button>
-    </div>
+      <Typography version="h1">Felans Bakery</Typography>
+
+    </div> 
   );
 }
 
