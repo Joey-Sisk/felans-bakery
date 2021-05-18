@@ -12,6 +12,7 @@ import {
   Container,
   Button,
 } from "@material-ui/core";
+import Footer from "./components/Footer"
 // import { StylesProvider } from '@material-ui/core/styles';
 
 import useStyles from "./appStyles";
@@ -96,14 +97,7 @@ function App() {
           </Grid>
         </Container>
       </main>
-      <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          Footer
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary">
-          Somthing here to give the footer a purpose.
-        </Typography>
-      </footer>
+      <Footer classes={classes} />
     </>
   );
 }
