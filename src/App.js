@@ -30,6 +30,7 @@ function App() {
         </Toolbar>
       </AppBar>
       <main>
+        <Landing />
         <div className={classes.container}>
           <Container maxWidth="sm">
             <Typography
