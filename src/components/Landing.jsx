@@ -1,31 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Typography, Container, Grid, Button } from "@material-ui/core";
-import sanityClient from "../client";
 
 export default function Landing(props) {
-  const [LandingData, setLandingData] = useState(null);
-
-  useEffect(() => {
-    sanityClient
-      .fetch(
-        `*[_type == "post"]{
-          title,
-          slug,
-          author,
-          mainImage{
-            asset->{
-              _id,
-              url
-            },
-            alt
-          },
-          categories,
-          publishdAt,
-          body
-        }`)
-        .then((data) => SVGTextPositioningElement(data))
-        .catch(console.error);
-  }, []);
 
   return (
     <div className={props.classes.container}>
