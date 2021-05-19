@@ -35,29 +35,37 @@ export default function Cards(props) {
   }, []);
 
   if (!cardsData) {
-    return <div>Loading...</div>;
+    return (
+      <div>
+        <p>Loading...</p>
+        <Button
+          size="small"
+          color="primary"
+          onClick={() => console.log(cardsData)}
+        >
+          Card Data
+        </Button>
+      </div>
+    );
   }
 
   return (
     <Container className={props.classes.cardGrid} maxWidth="md">
       <Grid container spacing={4}>
         {cardsData &&
-          cardsData.map((card) => (
+          cardsData.map((post, index) => (
             <Grid item key={props.card} xs={12} sm={6} md={4}>
               <Card className={props.classes.card}>
                 <CardMedia
                   className={props.classes.cardMedia}
-                  image="https://source.unsplash.com/random"
+                  // image={post.mainImage.asset.url}
                   title="Image title"
                 />
                 <CardContent className={props.classes.cardContent}>
                   <Typography gutterCottom cariant="h5">
-                    Heading
+                    {post.title}
                   </Typography>
-                  <Typography>
-                    This is a media card, you can use this section to describe
-                    the content.
-                  </Typography>
+                  <Typography>{post.body}</Typography>
                 </CardContent>
                 <CardActions>
                   <Button size="small" color="primary">
