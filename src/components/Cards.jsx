@@ -9,7 +9,7 @@ import {
   CardContent,
   Container,
 } from "@material-ui/core";
-import sanityClient from "../client";
+import sanityClient from "../client.js";
 
 export default function Cards(props) {
   const [cardsData, setCardsData] = useState(null);
@@ -20,6 +20,7 @@ export default function Cards(props) {
         `*[_type == "post"]{
           title,
           slug,
+          body,
           mainImage{
             asset->{
               _id,
@@ -27,7 +28,6 @@ export default function Cards(props) {
             },
             alt
           },
-          body
         }`
       )
       .then((data) => setCardsData(data))
@@ -53,7 +53,7 @@ export default function Cards(props) {
     <Container className={props.classes.cardGrid} maxWidth="md">
       <Grid container spacing={4}>
         {cardsData &&
-          cardsData.map((post, index) => (
+          cardsData.map((post) => (
             <Grid item key={props.card} xs={12} sm={6} md={4}>
               <Card className={props.classes.card}>
                 <CardMedia
