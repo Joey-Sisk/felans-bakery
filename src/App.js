@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <CssBaseline />
-      <Navbar />
+      <Navbar classes={classes}/>
       <main>
         <Landing classes={classes} />
         <Cards classes={classes} />

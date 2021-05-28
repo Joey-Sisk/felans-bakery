@@ -26,6 +26,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     padding: "50px 0",
   },
+  navbar: {
+    backgroundColor: "#F48FB1",
+  },
 }));
 
 export default useStyles;
