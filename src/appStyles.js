@@ -5,6 +5,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(8, 0, 6),
   },
+  socials: {
+    
+  },
   buttons: {
     marginTop: "40px",
   },
@@ -23,8 +26,9 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   footer: {
-    backgroundColor: theme.palette.background.paper,
-    padding: "50px 0",
+    backgroundColor: "#F48FB1",
+    paddingBottom: "20px",
+    paddingTop: "10px"
   },
   navbar: {
     backgroundColor: "#F48FB1",
