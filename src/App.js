@@ -17,14 +17,15 @@ function App() {
       <CssBaseline />
       <Navbar classes={classes} />
       <main>
-        <Landing classes={classes} />
         {/* <img src={parallaxImage} alt="sample" /> */}
         <Parallax
           bgImage={parallaxImage}
           bgImageAlt="Cupcakes outside"
-          strength={400}
+          strength={600}
         >
-          <h1 style={{ height: "500px" }}>Felans Bakery</h1>
+          <div style={{ height: "500px" }}>
+            <Landing classes={classes} />
+          </div>
         </Parallax>
         <Cards classes={classes} />
       </main>
