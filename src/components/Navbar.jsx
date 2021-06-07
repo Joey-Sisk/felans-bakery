@@ -9,11 +9,11 @@ export default function Navbar(props) {
   return (
     <AppBar className={props.classes.navbar} position="relative">
       <Toolbar>
-        <Typography variant="h6">Felans Bakery</Typography>
+        <Typography variant="h5">Felans Bakery</Typography>
         <FacebookIcon className={props.classes.socials} />
-        <InstagramIcon />
-        <TwitterIcon />
-        <EmailIcon />
+        <InstagramIcon className={props.classes.socials} />
+        <TwitterIcon className={props.classes.socials} />
+        <EmailIcon className={props.classes.socials} />
       </Toolbar>
     </AppBar>
   );

@@ -5,7 +5,7 @@ import Landing from "./components/Landing";
 import Cards from "./components/Cards";
 import Navbar from "./components/Navbar";
 import { Parallax } from "react-parallax";
-import parallaxImage from "./images/cupcakes-outside.jpg";
+import parallaxImage from "./images/cupcakes-outside-square.jpg";
 // import { StylesProvider } from '@material-ui/core/styles';
 
 import useStyles from "./appStyles";
@@ -22,10 +22,10 @@ function App() {
           bgImage={parallaxImage}
           bgImageAlt="Cupcakes outside"
           strength={600}
+          blur="2"
+          
         >
-          <div style={{ height: "500px" }}>
-            <Landing classes={classes} />
-          </div>
+          <Landing classes={classes} />
         </Parallax>
         <Cards classes={classes} />
       </main>
@@ -35,3 +35,5 @@ function App() {
 }
 
 export default App;
+
+// https://www.npmjs.com/package/react-parallax

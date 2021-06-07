@@ -2,19 +2,23 @@ import React from "react";
 import { Typography, Container, Grid, Button } from "@material-ui/core";
 
 export default function Landing(props) {
-
   return (
-    <div className={props.classes.container}>
-      <Container maxWidth="sm">
+    <div className={props.classes.landingContainer}>
+      <Container maxWidth="sm" gutterBottom>
         <Typography
+          className={props.classes.landingTitle}
           variant="h2"
           align="center"
-          color="textPrimary"
           gutterBottom
         >
           Felans Bakery
         </Typography>
-        <Typography variant="h5" align="center" color="textSecondary" paragraph>
+        <Typography
+          className={props.classes.landingText}
+          variant="h5"
+          align="center"
+          paragraph
+        >
           Welcome to my Bakery, please look around at some of my edible art and
           if you like what you see you can reach out to me and I will make a
           custom cake to meet your needs.
@@ -25,7 +29,9 @@ export default function Landing(props) {
               <Button variant="contained" color="primary">
                 Contact Me
               </Button>
-              <Button variant="outlined" color="primary">
+            </Grid>
+            <Grid item>
+              <Button variant="contained" color="primary">
                 Social Media
               </Button>
             </Grid>
