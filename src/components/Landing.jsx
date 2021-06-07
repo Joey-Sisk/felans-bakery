@@ -5,10 +5,10 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 export default function Landing(props) {
   return (
     <div className={props.classes.landingContainer}>
-      <Container maxWidth="sm" gutterBottom>
+      <Container maxWidth="md" gutterBottom>
         <Typography
           className={props.classes.landingTitle}
-          variant="h2"
+          variant="h1"
           align="center"
           gutterBottom
         >

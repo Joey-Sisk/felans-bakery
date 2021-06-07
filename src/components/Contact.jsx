@@ -15,7 +15,7 @@ export default function Contact(props) {
         <TextField
           fullWidth
           label="Email"
-          variant="filled"
+          variant="outlined"
           id="email"
           type="email"
           name="email"
@@ -27,7 +27,7 @@ export default function Contact(props) {
           multiline
           rows={3}
           label="Message"
-          variant="filled"
+          variant="outlined"
           id="message"
           name="message"
           className={props.classes.forms}

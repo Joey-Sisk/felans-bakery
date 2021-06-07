@@ -17,16 +17,16 @@ function App() {
   return (
     <>
       <CssBaseline />
-      <Navbar classes={classes} />
+      {/* <Navbar classes={classes} /> */}
       <main>
-        {/* <img src={parallaxImage} alt="sample" /> */}
+        <Landing classes={classes} />
         <Parallax
           bgImage={topParallaxImage}
           bgImageAlt="Cupcakes outside"
           strength={600}
-          blur="3"
+          // blur="3"
         >
-          <Landing classes={classes} />
+          <div style={{ height: "350px" }}></div>
         </Parallax>
         <Cards classes={classes} />
       </main>
@@ -34,10 +34,12 @@ function App() {
         bgImage={botParallaxImage}
         bgImageAlt="Wedding cake"
         strength={600}
-        blur="3"
+        // blur="3"
       >
-        <Contact classes={classes} />
+        <div style={{ height: "350px" }}></div>
+        
       </Parallax>
+      <Contact classes={classes} />
       <Footer classes={classes} />
     </>
   );

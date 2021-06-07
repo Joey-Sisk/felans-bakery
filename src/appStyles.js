@@ -2,9 +2,10 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   landingContainer: {
-    background:
-      "linear-gradient(180deg, rgba(236,64,122,.4) 60%, rgba(251,251,251,.4) 100%);",
-    padding: theme.spacing(8, 0, 6),
+    backgroundColor: "#F48FB1",
+    // background:
+      // "linear-gradient(180deg, rgba(236,64,122,.4) 60%, rgba(251,251,251,.4) 100%);",
+    padding: theme.spacing(8, 0, 10),
   },
   landingTitle: {
     color: "white",
@@ -66,8 +67,8 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "8px",
   },
   formContainer: {
-    background:
-      "linear-gradient(180deg, rgba(251,251,251,.4) 15%, rgba(236,64,122,.4) 100%);",
+    // background:
+      // "linear-gradient(180deg, rgba(251,251,251,.4) 15%, rgba(236,64,122,.4) 100%);",
     height: "350px",
   },
   footerLink: {
