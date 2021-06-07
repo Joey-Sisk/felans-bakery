@@ -7,9 +7,9 @@ export default function Footer(props) {
       <Typography variant="h6" align="center" gutterBottom>
         Felans Bakery
       </Typography>
-      <Typography variant="subtitle1" align="center" color="textSecondary">
+      <Typography variant="subtitle1" align="center">
         This website created by{" "}
-        <a href="https://joeysiskportfolio.netlify.app/">Joey Sisk</a>.
+        <a href="https://joeysiskportfolio.netlify.app/" className={props.classes.footerLink}>Joey Sisk</a>.
       </Typography>
     </footer>
   );

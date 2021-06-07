@@ -23,18 +23,18 @@ export default function Landing(props) {
           if you like what you see you can reach out to me and I will make a
           custom cake to meet your needs.
         </Typography>
-        <div className={props.classes.buttons}>
+        <div className={props.classes.buttonContainer}>
           <Grid container spacing={2} justify="center">
-            <Grid item>
-              <Button variant="contained" color="primary">
+            {/* <Grid item> */}
+              <Button variant="contained" className={props.classes.buttons}>
                 Contact Me
               </Button>
-            </Grid>
+            {/* </Grid>
             <Grid item>
-              <Button variant="contained" color="primary">
+              <Button variant="contained" className={props.classes.buttons}>
                 Social Media
               </Button>
-            </Grid>
+            </Grid> */}
           </Grid>
         </div>
       </Container>

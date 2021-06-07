@@ -18,8 +18,15 @@ const useStyles = makeStyles((theme) => ({
   socials: {
     marginLeft: "6px",
   },
-  buttons: {
+  buttonContainer: {
     marginTop: "40px",
+  },
+  buttons: {
+    color: "white",
+    backgroundColor: "#EC407A",
+    "&:hover": {
+      background: "#D81B60"
+    }
   },
   cardContainer: {
     display: "flex",
@@ -46,10 +53,25 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#F48FB1",
     paddingBottom: "20px",
     paddingTop: "10px",
+    color: "white",
   },
   navbar: {
     backgroundColor: "#F48FB1",
     height: "70px",
+  },
+  form: {
+    paddingTop: "70px"
+  },
+  forms: {
+    marginBottom: "8px",
+  },
+  formContainer: {
+    background:
+      "linear-gradient(180deg, rgba(251,251,251,.4) 15%, rgba(236,64,122,.4) 100%);",
+    height: "350px",
+  },
+  footerLink: {
+    color: "#FCE4EC",
   },
 }));
 
