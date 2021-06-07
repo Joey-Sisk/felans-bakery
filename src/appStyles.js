@@ -9,7 +9,8 @@ const useStyles = makeStyles((theme) => ({
   },
   landingTitle: {
     color: "white",
-    textShadow: "2px 2px 2px #F48FB1",
+    // textShadow: "2px 2px 2px #F48FB1",
+    textShadow: "2px 2px 2px #777",
     // textShadow: "-1px 0 #F48FB1, 0 1px #F48FB1, 1px 0 #F48FB1, 0 -1px #F48FB1",
   },
   landingText: {
