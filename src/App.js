@@ -18,7 +18,7 @@ function App() {
     <>
       <CssBaseline />
       {/* <Navbar classes={classes} /> */}
-      <main>
+      <main className={classes.mainBackground}>
         <Landing classes={classes} />
         <Parallax
           bgImage={topParallaxImage}
@@ -35,6 +35,7 @@ function App() {
         bgImageAlt="Wedding cake"
         strength={600}
         // blur="3"
+        className={classes.mainBackground}
       >
         <div style={{ height: "350px" }}></div>
         

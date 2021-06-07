@@ -4,7 +4,7 @@ const useStyles = makeStyles((theme) => ({
   landingContainer: {
     backgroundColor: "#F48FB1",
     // background:
-      // "linear-gradient(180deg, rgba(236,64,122,.4) 60%, rgba(251,251,251,.4) 100%);",
+    // "linear-gradient(180deg, rgba(236,64,122,.4) 60%, rgba(251,251,251,.4) 100%);",
     padding: theme.spacing(8, 0, 10),
   },
   landingTitle: {
@@ -27,8 +27,12 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     backgroundColor: "#EC407A",
     "&:hover": {
-      background: "#D81B60"
-    }
+      background: "#D81B60",
+    },
+  },
+  mainBackground: {
+    // background: "rgb(244,143,177)",
+    background: "linear-gradient(rgba(244,143,177,1), rgba(250,250,250,1))",
   },
   cardContainer: {
     display: "flex",
@@ -62,14 +66,15 @@ const useStyles = makeStyles((theme) => ({
     height: "70px",
   },
   form: {
-    paddingTop: "70px"
+    paddingTop: "70px",
   },
   forms: {
     marginBottom: "8px",
   },
   formContainer: {
     // background:
-      // "linear-gradient(180deg, rgba(251,251,251,.4) 15%, rgba(236,64,122,.4) 100%);",
+    // "linear-gradient(180deg, rgba(251,251,251,.4) 15%, rgba(236,64,122,.4) 100%);",
+    backgroundColor: "#fafafa",
     height: "350px",
   },
   footerLink: {
