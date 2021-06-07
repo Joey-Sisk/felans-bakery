@@ -9,7 +9,7 @@ export default function Contact(props) {
   }
 
   return (
-    <div className={props.classes.formContainer} >
+    <div id="contactForm" className={props.classes.formContainer} >
       <Container maxWidth="sm">
       <form noValidate onSubmit={handleSubmit} className={props.classes.form}>
         <TextField

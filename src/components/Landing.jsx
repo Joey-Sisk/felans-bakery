@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography, Container, Grid, Button } from "@material-ui/core";
+import FacebookIcon from '@material-ui/icons/Facebook';
 
 export default function Landing(props) {
   return (
@@ -25,16 +26,16 @@ export default function Landing(props) {
         </Typography>
         <div className={props.classes.buttonContainer}>
           <Grid container spacing={2} justify="center">
-            {/* <Grid item> */}
-              <Button variant="contained" className={props.classes.buttons}>
+            <Grid item>
+              <Button href="#contactForm" variant="contained" size="large" className={props.classes.buttons}>
                 Contact Me
               </Button>
-            {/* </Grid>
+            </Grid>
             <Grid item>
-              <Button variant="contained" className={props.classes.buttons}>
-                Social Media
+              <Button href="https://www.facebook.com/FelansCustomCakes" target="_blank" variant="contained" size="large" className={props.classes.buttons} endIcon={<FacebookIcon />}>
+                Facebook
               </Button>
-            </Grid> */}
+            </Grid>
           </Grid>
         </div>
       </Container>
