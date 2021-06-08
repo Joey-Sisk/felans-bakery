@@ -5,10 +5,10 @@ export default function Footer(props) {
   return (
     <footer className={props.classes.footer}>
       <Typography variant="h6" align="center" gutterBottom>
-        Felans Bakery
+        Felan's Bakery
       </Typography>
       <Typography variant="subtitle1" align="center">
-        This website created by{" "}
+        A website created by{" "}
         <a href="https://joeysiskportfolio.netlify.app/" className={props.classes.footerLink}>Joey Sisk</a>.
       </Typography>
     </footer>

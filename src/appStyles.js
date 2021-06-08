@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
   footer: {
     backgroundColor: "#F48FB1",
     paddingBottom: "20px",
-    paddingTop: "10px",
+    paddingTop: "15px",
     color: "white",
   },
   navbar: {
@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
     height: "70px",
   },
   form: {
-    paddingTop: "70px",
+    paddingTop: "75px",
   },
   forms: {
     marginBottom: "8px",
@@ -79,6 +79,10 @@ const useStyles = makeStyles((theme) => ({
   },
   footerLink: {
     color: "#FCE4EC",
+  },
+  thanks: {
+    color: "#F48FB1",
+    paddingTop: "125px",
   },
 }));
 
