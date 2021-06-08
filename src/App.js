@@ -6,8 +6,8 @@ import Cards from "./components/Cards";
 import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
 import { Parallax } from "react-parallax";
-import topParallaxImage from "./images/cupcakes-outside-square.jpg";
-import botParallaxImage from "./images/thin-cut-cake.jpg";
+import topParallaxImage from "./images/thin-cut-cake.jpg";
+import botParallaxImage from "./images/colorful-cupcakes.jpg";
 // import { StylesProvider } from '@material-ui/core/styles';
 
 import useStyles from "./appStyles";
