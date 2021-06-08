@@ -23,7 +23,7 @@ function App() {
         <Parallax
           bgImage={topParallaxImage}
           bgImageAlt="Cupcakes outside"
-          strength={600}
+          strength={250}
           // blur="3"
         >
           <div style={{ height: "350px" }}></div>
@@ -33,7 +33,7 @@ function App() {
       <Parallax
         bgImage={botParallaxImage}
         bgImageAlt="Wedding cake"
-        strength={600}
+        strength={250}
         // blur="3"
         className={classes.mainBackground}
       >
