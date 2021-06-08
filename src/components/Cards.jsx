@@ -40,14 +40,14 @@ export default function Cards(props) {
 
   if (!cardsData) {
     return (
-      <Container className={props.classes.cardGrid} maxWidth="sm">
-        <Grid container spacing={4}>
+      <Container className={props.classes.cardGrid} maxWidth="md">
+        <Grid container spacing={4} className={props.classes.cardContainer}>
           {loadingData.map((loading) => (
             <Grid item key={uuidv4()} xs={12} sm={6} >
               <Card className={props.classes.card}>
                 <CardMedia
                   className={props.classes.cardMedia}
-                  image="http://via.placeholder.com/640x360"
+                  image="http://via.placeholder.com/1280x720"
                   title="Image Title"
                 />
                 <CardContent className={props.classes.cardContent}>
@@ -63,7 +63,7 @@ export default function Cards(props) {
   }
 
   return (
-    <Container container className={props.classes.cardGrid} maxWidth="md" justify="center">
+    <Container className={props.classes.cardGrid} maxWidth="md">
       {/* <Button
         size="small"
         color="primary"
