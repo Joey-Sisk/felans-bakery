@@ -51,6 +51,7 @@ const useStyles = makeStyles((theme) => ({
   },
   cardMedia: {
     paddingTop: "56.25%",
+    borderBottom: "5px solid #8ff4d2",
   },
   cardContent: {
     flexGrow: 1,
@@ -78,7 +79,7 @@ const useStyles = makeStyles((theme) => ({
     height: "350px",
   },
   footerLink: {
-    color: "#FCE4EC",
+    color: "#8ff4d2",
   },
   thanks: {
     color: "#F48FB1",

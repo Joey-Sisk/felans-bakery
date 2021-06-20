@@ -43,9 +43,10 @@ export default function Cards(props) {
       <Container className={props.classes.cardGrid} maxWidth="md">
         <Grid container spacing={4} className={props.classes.cardContainer}>
           {loadingData.map((loading) => (
-            <Grid item key={uuidv4()} xs={12} sm={6} >
+            <Grid item key={uuidv4()} xs={12} sm={6}>
               <Card className={props.classes.card}>
                 <CardMedia
+                  style={{ width: "auto", height: "500px" }}
                   className={props.classes.cardMedia}
                   image="http://via.placeholder.com/1280x720"
                   title="Image Title"
@@ -77,6 +78,7 @@ export default function Cards(props) {
             <Grid item key={uuidv4()} xs={12} sm={6}>
               <Card className={props.classes.card}>
                 <CardMedia
+                  style={{ width: "auto", height: "360px" }}
                   className={props.classes.cardMedia}
                   image={post.mainImage.asset.url}
                   title="Image title"
