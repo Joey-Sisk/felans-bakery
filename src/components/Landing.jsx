@@ -1,6 +1,7 @@
 import React from "react";
 import { Typography, Container, Grid, Button } from "@material-ui/core";
 import FacebookIcon from '@material-ui/icons/Facebook';
+import EmailIcon from '@material-ui/icons/Email';
 
 export default function Landing(props) {
   return (
@@ -27,7 +28,7 @@ export default function Landing(props) {
         <div className={props.classes.buttonContainer}>
           <Grid container spacing={2} justify="center">
             <Grid item>
-              <Button href="#contactForm" variant="contained" size="large" className={props.classes.buttons}>
+              <Button href="#contactForm" variant="contained" size="large" className={props.classes.buttons} endIcon={<EmailIcon />}>
                 Contact Me
               </Button>
             </Grid>
