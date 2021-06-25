@@ -84,12 +84,12 @@ export default function Cards(props) {
                   title="Image title"
                 />
                 <CardContent className={props.classes.cardContent}>
-                  <Typography variant="h5">{post.title}</Typography>
-                  <BlockContent
+                  <Typography variant="h5" align="center">{post.title}</Typography>
+                  {/* <BlockContent
                     blocks={post.body}
                     projectId="dbi6o2or"
                     dataset="production"
-                  />
+                  /> */}
                 </CardContent>
                 {/* <CardActions>
                   <Button size="small" color="primary">

@@ -51,10 +51,12 @@ const useStyles = makeStyles((theme) => ({
   },
   cardMedia: {
     paddingTop: "56.25%",
-    borderBottom: "5px solid #8ff4d2",
+    borderBottom: "5px solid #8FB1F4",
   },
   cardContent: {
     flexGrow: 1,
+    backgroundColor: "#8ff4d230",
+    color: "#8FB1F4"
   },
   footer: {
     backgroundColor: "#F48FB1",
