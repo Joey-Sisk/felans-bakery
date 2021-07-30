@@ -11,7 +11,7 @@ import {
 } from "@material-ui/core";
 import sanityClient from "../client.js";
 import { v4 as uuidv4 } from "uuid";
-import BlockContent from "@sanity/block-content-to-react";
+// import BlockContent from "@sanity/block-content-to-react";
 
 export default function Cards(props) {
   const [cardsData, setCardsData] = useState(null);
