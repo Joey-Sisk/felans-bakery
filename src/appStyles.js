@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
   cardContent: {
     flexGrow: 1,
     backgroundColor: "#F48FB1",
-    color: "#ffffff"
+    color: "#ffffff",
     // backgroundColor: "#8ff4d220",
     // color: "#749ef3"
   },
