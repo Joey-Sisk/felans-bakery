@@ -55,8 +55,10 @@ const useStyles = makeStyles((theme) => ({
   },
   cardContent: {
     flexGrow: 1,
-    backgroundColor: "#8ff4d220",
-    color: "#749ef3"
+    backgroundColor: "#F48FB1",
+    color: "#ffffff"
+    // backgroundColor: "#8ff4d220",
+    // color: "#749ef3"
   },
   footer: {
     backgroundColor: "#F48FB1",
@@ -88,5 +90,8 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "125px",
   },
 }));
+
+// Pink/blue gradient
+// "linear-gradient(#749ef3, #F48FB1)"
 
 export default useStyles;
