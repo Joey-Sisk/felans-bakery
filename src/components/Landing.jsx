@@ -94,14 +94,15 @@ export default function Landing(props) {
           align="center"
           paragraph
         >
-          <BlockContent
+          {/* <BlockContent
             blocks={author.bio}
             projectId="dbi6o2or"
             dataset="production"
-          />
-          {/* Welcome to my Bakery, please look around at some of my edible art and
+            styles=""
+          /> */}
+          Welcome to my Bakery, please look around at some of my edible art and
           if you like what you see you can reach out to me and I will make a
-          custom cake to meet your needs. */}
+          custom cake to meet your needs.
         </Typography>
         <div className={props.classes.buttonContainer}>
           <Grid container spacing={2} justify="center">

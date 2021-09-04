@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   landingContainer: {
     backgroundColor: "#F48FB1",
+    // height: "",
     // background:
     // "linear-gradient(180deg, rgba(236,64,122,.4) 60%, rgba(251,251,251,.4) 100%);",
     padding: theme.spacing(8, 0, 10),
@@ -66,10 +67,10 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "15px",
     color: "white",
   },
-  navbar: {
-    backgroundColor: "#F48FB1",
-    height: "70px",
-  },
+  // navbar: {
+  //   backgroundColor: "#F48FB1",
+  //   height: "70px",
+  // },
   form: {
     paddingTop: "75px",
   },
